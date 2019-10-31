@@ -21,7 +21,8 @@
     "postinstall": "electron-builder install-app-deps",
     "start": "node build/start.js",
     "targz": "webpack --config=build/webpack.app.config.js --env=production && electron-builder --linux tar.gz",
-    "arm71": "webpack --config=build/webpack.app.config.js --env=production && electron-builder --armv7l"
+    "arm71": "webpack --config=build/webpack.app.config.js --env=production && electron-builder --armv7l",
+    "pi": "webpack --config=build/webpack.app.config.js --env=production && electron-builder --linux tar.gz --arch armv7l"
   },
   "keywords": [],
   "author": "",
